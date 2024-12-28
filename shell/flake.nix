@@ -10,7 +10,9 @@
     let pkgs = import nixpkgs { inherit system; }; in {
 
       devShells.default = pkgs.mkShell {
-        packages = [ pkgs.hello ];
+        packages = [
+          pkgs.hello
+        ];
 
         # Useful for easily including the build tools of a package which is defined here.
         # inputsFrom = [ localPkg ];
