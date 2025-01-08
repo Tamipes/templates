@@ -1,2 +1,4 @@
-/target
-result*
+target
+result
+.direnv
+
