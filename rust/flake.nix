@@ -116,6 +116,7 @@
 
         packages = {
           default = my-crate;
+          deps = cargoArtifacts;
         } // lib.optionalAttrs (!pkgs.stdenv.isDarwin) {
           my-crate-llvm-coverage = craneLibLLvmTools.cargoLlvmCov (commonArgs // {
             inherit cargoArtifacts;
